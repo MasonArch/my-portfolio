@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mason Arch - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Mason Arch
+          <div class="contact_info">
+            <img src="images/envelope.png"/>
+          masonarchbusiness@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="Images/phone.png" alt="Phone Icon"/>
+          +1(331)-385-3975
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class='topmenu' href='#skills'>My Skills</a>
+          <a class='topmenu' href='#projects'>Projects</a>
+          <a class='topmenu' href='#recommendations'>Recomendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="Images/Profile_Image.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Mason Arch! <img src="Images/wave.png" width="40px"/>
+          </h1>
+          <p>
+            I am a software engineer with a year of experience, and have began working with IBM to gain certification. I am passionate about this field and motivated to complete my certification and make a successful career in the software engineering industry. I am eager to put my skills and knowledge to work and make an impact in the software engineering world. I am looking forward to the opportunities this will bring and being able to use my expertise to benefit the industry.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="Images/htmllogo.png"/>
+          <h6>HTML</h6>
+          <p>1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="Images/javascriptlogo.png"/>
+          <h6>JavaScript</h6>
+          <p> <1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="Images/csslogo.png"/>
+          <h6>CSS</h6>
+          <p> 1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="Images/reactlogo.png"/>
+          <h6>React</h6>
+          <p> <1 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="Images/nodelogo.png"/>
+          <h6>Node.js</h6>
+          <p> <1 years experience</p>
+        </div>  
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>QR Code Generator</h3>
+            <ul>
+              <li>Developed a secure website integrated with a QR-Code API for an automobile client using HTML, CSS, JavaScript.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Interest Calculator</h3>
+            <ul>
+              <li>Developed a Interest Calculator that had slider functions and used basic HTML, CSS, and JavaScript.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Full-Stack Twitter</h3>
+            <ul>
+              <li>Created a styled multi-page website using REACT and Node to create a copy-cat version of Twitter</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Mason is an absolute joy to work with! His exceptional software development skills and attention to detail always impress me. He consistently delivers high-quality work and is a valuable asset to any team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the pleasure of collaborating with Mason on a software development project, and I was blown away by his professionalism and expertise. His ability to problem-solve and think creatively sets him apart from the rest. I highly recommend working with him!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Mason was a fantastic experience. His strong work ethic, dedication, and passion for software development shine through in everything he does. He's not only a talented developer but also a great team player who brings positivity and enthusiasm to every project.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="Images/circle_check.png"/>
+      <h3>Thank you for adding a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
